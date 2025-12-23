@@ -1,0 +1,703 @@
+/* Progress.css - Professional Analytics Dashboard Design */
+
+.progress-wrapper {
+  background: linear-gradient(135deg, 
+    rgba(12, 28, 36, 0.98) 0%, 
+    rgba(26, 47, 56, 0.95) 50%,
+    rgba(44, 83, 100, 0.92) 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.progress-container {
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+/* Header Section */
+.progress-header {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(38, 208, 206, 0.1), 
+    rgba(26, 145, 216, 0.1));
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #118ab2, #1da1f2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(17, 138, 178, 0.3);
+}
+
+.progress-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.progress-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Stats Row */
+.stats-row {
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.workout-stat {
+  border-left: 4px solid #ff6b6b;
+}
+
+.volume-stat {
+  border-left: 4px solid #4ecdc4;
+}
+
+.diet-stat {
+  border-left: 4px solid #ffd166;
+}
+
+.nutrition-stat {
+  border-left: 4px solid #06d6a0;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.workout-stat .stat-icon {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+
+.volume-stat .stat-icon {
+  background: linear-gradient(135deg, #4ecdc4, #6ee7e7);
+}
+
+.diet-stat .stat-icon {
+  background: linear-gradient(135deg, #ffd166, #ffe39f);
+}
+
+.nutrition-stat .stat-icon {
+  background: linear-gradient(135deg, #06d6a0, #0ef7c2);
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.stat-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-trend,
+.stat-detail {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.stat-trend {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stat-detail {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stat-trend svg {
+  color: #06d6a0;
+}
+
+/* Charts Section */
+.charts-section {
+  padding: 2rem 0;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Chart Cards */
+.chart-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  border-color: rgba(38, 208, 206, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chart-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.chart-title svg {
+  color: #26d0ce;
+}
+
+.chart-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.chart-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chart-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chart-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.chart-btn.active {
+  background: #26d0ce;
+  border-color: #26d0ce;
+  color: white;
+}
+
+.chart-container {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.no-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.no-data-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-data p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.chart-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+
+.chart-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Summary Cards */
+.summary-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(38, 208, 206, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-icon {
+  font-size: 1.8rem;
+  color: #26d0ce;
+  background: rgba(38, 208, 206, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-header h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.summary-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.summary-label {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.summary-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.recent-exercises,
+.recent-meals {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exercise-tag,
+.meal-tag {
+  background: rgba(38, 208, 206, 0.1);
+  color: #26d0ce;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.empty-state h4 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .progress-container {
+    padding: 0 1.5rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .header-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  .progress-title {
+    font-size: 2rem;
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-container {
+    padding: 0 1rem;
+  }
+  
+  .progress-header {
+    padding: 1.5rem;
+  }
+  
+  .stat-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 1.7rem;
+  }
+  
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .chart-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .progress-wrapper {
+    padding: 1.5rem 0;
+  }
+  
+  .progress-title {
+    font-size: 1.7rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .stats-row {
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .chart-container {
+    height: 220px;
+  }
+}
+/* Simple Chart Styles */
+.simple-chart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 200px;
+}
+
+.chart-bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex: 1;
+  padding: 1rem 1rem 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.chart-bars::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chart-bar {
+  width: 40px;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(to top, #26d0ce, #1a91d8);
+  min-height: 10px;
+  margin: 0 5px;
+}
+
+.chart-bar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(38, 208, 206, 0.3);
+}
+
+.bar-value {
+  position: absolute;
+  top: -25px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(12, 28, 36, 0.9);
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.bar-value::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(12, 28, 36, 0.9);
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chart-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  text-align: center;
+  min-width: 40px;
+  font-weight: 500;
+}
+
+/* Nutrition chart specific styles */
+.nutrition-chart .chart-bar {
+  background: linear-gradient(to top, #ff6b6b, #ff8e8e);
+}
+
+.nutrition-chart .chart-bar:nth-child(even) {
+  background: linear-gradient(to top, #4ecdc4, #6ee7e7);
+}
+
+/* Chart grid lines */
+.chart-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grid-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+/* Chart legend */
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments for simple charts */
+@media (max-width: 768px) {
+  .chart-bars {
+    min-height: 150px;
+    padding: 0.75rem 0.75rem 0.25rem 0.75rem;
+  }
+  
+  .chart-bar {
+    width: 30px;
+    margin: 0 3px;
+  }
+  
+  .bar-value {
+    font-size: 0.7rem;
+    top: -22px;
+    padding: 3px 6px;
+  }
+  
+  .chart-label {
+    font-size: 0.7rem;
+    min-width: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chart-bars {
+    min-height: 120px;
+  }
+  
+  .chart-bar {
+    width: 25px;
+  }
+  
+  .bar-value {
+    font-size: 0.65rem;
+    top: -20px;
+  }
+  
+  .chart-legend {
+    gap: 1rem;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+  }
+}

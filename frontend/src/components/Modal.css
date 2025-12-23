@@ -1,0 +1,77 @@
+/* WorkoutHistory.css */
+.workout-history {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .workout-history h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  
+  .workout-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .workout-card {
+    background: linear-gradient(145deg, #f3f3f3, #ddd);
+    border-radius: 12px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .workout-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .workout-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .workout-details strong {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .workout-card .icon {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  
+  .delete-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .delete-button:hover {
+    background: #c0392b;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
